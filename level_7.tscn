@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://y7xvptobkyl2"]
+[gd_scene load_steps=21 format=4 uid="uid://y7xvptobkyl2"]
 
 [ext_resource type="Script" uid="uid://dqfsvggvnc0dp" path="res://first.gd" id="1_n5k06"]
 [ext_resource type="Texture2D" uid="uid://cifxu36r16yf6" path="res://images/Tiles.png" id="2_w12s5"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://7a3wlvb055dm" path="res://ctrl.tscn" id="11_pfhdb"]
 [ext_resource type="Texture2D" uid="uid://cf2yxomaxsn4h" path="res://images/pause.png" id="12_cvd2s"]
 [ext_resource type="Script" uid="uid://df30jy0aafqqa" path="res://pause.gd" id="13_8t08o"]
+[ext_resource type="FontFile" uid="uid://djfbke8b4o6dx" path="res://images/something.ttf" id="14_cvd2s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysiic"]
 texture = ExtResource("2_w12s5")
@@ -829,5 +830,14 @@ offset_bottom = 36.0
 texture_normal = ExtResource("12_cvd2s")
 stretch_mode = 0
 script = ExtResource("13_8t08o")
+
+[node name="num" type="RichTextLabel" parent="."]
+offset_left = -124.0
+offset_top = -37.0
+offset_right = -54.0
+offset_bottom = 18.0
+theme_override_fonts/normal_font = ExtResource("14_cvd2s")
+theme_override_font_sizes/normal_font_size = 40
+text = "13"
 
 [editable path="Lav"]

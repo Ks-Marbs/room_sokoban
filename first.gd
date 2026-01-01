@@ -1,6 +1,10 @@
 extends Node2D
 
 func _ready() -> void:
+	if Global.level != 15:
+		$num.text = str(Global.level)
+	else:
+		$Lav/Camera2D/num.text = "15"
 	Global.moves = 0
 	Global.prepare(Global.level)
 # Called every frame. 'delta' is the elapsed time since the previous frame.

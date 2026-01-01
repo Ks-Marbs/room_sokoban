@@ -12,7 +12,6 @@ var moving := false
 var can_move := false
 var xcell := (position.x - (int(position.x) % 36)) / 36
 var ycell := (position.y - (int(position.y) % 36)) / 36
-var hurten:= false
 var one = preload("res://images/lav.1.1.1.1.1.png")
 var two = preload("res://images/lav.1.1.1.1.2.png")
 var three = preload("res://images/lav.1.1.1.1.3.png")
@@ -39,7 +38,7 @@ func control():
 				else:
 					move_step(nextplan_move)
 
-			elif (Input.is_action_pressed("up") or Input.is_action_pressed("down")) \
+			if (Input.is_action_pressed("up") or Input.is_action_pressed("down")) \
 				and Global.get_matrix(xcell, ycell+Input.get_axis("up","down"), Global.room_matrix) != 999:
 				can_move = true
 				nextplan_move = Vector2.DOWN * Input.get_axis("up","down")
@@ -149,7 +148,6 @@ func _process(delta):
 		$RightRay.add_exception($RightRay.get_collider())
 
 	if moving or not (int(position.x) % tile_size == 0 and int(position.y) % tile_size == 0):
-		hurten = false
 		can_move = false
 		return
 
@@ -203,6 +201,8 @@ func move_step(dir: Vector2) -> void:
 	last_move = dir
 	xcell = (position.x - (int(position.x) % 36)) / 36
 	ycell = (position.y - (int(position.y) % 36)) / 36
+	Global.x = xcell
+	Global.y = ycell
 	if Global.get_matrix(xcell,ycell,Global.special_matrix) == 0:
 		await get_tree().create_timer(Global.full_delay).timeout
 	moving = false
@@ -219,4 +219,6 @@ func ice_step(dir: Vector2) -> void:
 		last_move = dir
 		xcell = (position.x - (int(position.x) % 36)) / 36
 		ycell = (position.y - (int(position.y) % 36)) / 36
+		Global.x = xcell
+		Global.y = ycell
 		moving = false
