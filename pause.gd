@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if $lef.button_pressed:
+	if button_pressed:
 		Input.action_press("esc")
 	else:
 		Input.action_release("esc")

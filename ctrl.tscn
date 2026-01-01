@@ -14,9 +14,9 @@ script = ExtResource("1_lseln")
 
 [node name="lef" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = -54.0
+offset_left = -51.0
 offset_top = -18.0
-offset_right = -18.0
+offset_right = -15.0
 offset_bottom = 18.0
 texture_normal = ExtResource("2_cd56x")
 stretch_mode = 0
@@ -42,9 +42,9 @@ stretch_mode = 0
 
 [node name="righ" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 18.0
+offset_left = 15.0
 offset_top = -18.0
-offset_right = 54.0
+offset_right = 51.0
 offset_bottom = 18.0
 texture_normal = ExtResource("2_cd56x")
 stretch_mode = 0
