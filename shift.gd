@@ -19,12 +19,7 @@ func wiggle():
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	wiggle()
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+	await get_tree().create_timer(Global.full_delay).timeout
 	if rotation_degrees == 0 or rotation_degrees == 360 or rotation_degrees == -360:
 		Global.special_matrix[xcell][ycell] = 2
 	if rotation_degrees == 180 or rotation_degrees == -180:
@@ -33,6 +28,12 @@ func _process(delta: float) -> void:
 		Global.special_matrix[xcell][ycell] = 4
 	if rotation_degrees == 90 or rotation_degrees == -270:
 		Global.special_matrix[xcell][ycell] = 5
+	wiggle()
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
 	if Global.level == 15:
 		Global.room_matrix[xcell][ycell] = 0
 	pass

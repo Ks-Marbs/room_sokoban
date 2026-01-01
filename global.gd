@@ -19,7 +19,7 @@ var y := 0
 var save:=[[0,0,0,0,1],\
 [1,50,40,30,1],[2,78,68,58,0],[3,73,63,53,0],[4,105,95,85,0],[5,65,55,45,0],\
 [6,80,70,60,0],[7,86,76,66,0],[8,108,98,88,0],[9,48,38,28,0],[10,66,56,46,0],\
-[11,62,52,42,0],[12,118,108,98,0],[13,109,99,89,0],[14,115,105,95,0],[15,730,700,670,1]]
+[11,62,52,42,0],[12,118,108,98,0],[13,109,99,89,1],[14,115,105,95,0],[15,730,700,670,0]]
 
 
 
@@ -29,10 +29,10 @@ func get_matrix(x,y,mat):
 	else:
 		return 999
 func prepare(n):
+	fill_rect(special_matrix,0,0,cols,rows,0)
 	fgoals = 0
 	goals = 0
 	fill_rect(room_matrix,0,0,cols,rows,999)
-	fill_rect(special_matrix,0,0,cols,rows,0)
 	match n:
 		1:
 			cols = 10
@@ -180,13 +180,6 @@ func prepare(n):
 			fill_rect(room_matrix,5,6,9,6,1)
 			room_matrix[10][6]=999
 			room_matrix[0][5]=999
-			fill_rect(special_matrix,11,6,11,8,2)
-			fill_rect(special_matrix,9,0,9,1,3)
-			special_matrix[4][6]=4
-			special_matrix[0][4]=5
-			fill_rect(special_matrix,5,0,8,6,5)
-			fill_rect(special_matrix,5,1,8,5,0)
-			fill_rect(special_matrix,5,8,10,8,5)
 
 		12:
 			cols = 11
@@ -195,13 +188,6 @@ func prepare(n):
 			fill_rect(room_matrix,0,3,5,5,2)
 			fill_rect(room_matrix,0,6,11,8,2)
 			room_matrix[5][4]=0
-			special_matrix[11][8]=2
-			special_matrix[6][5]=2
-			special_matrix[11][0]=3
-			special_matrix[11][5]=4
-			special_matrix[11][7]=4
-			special_matrix[6][4]=5
-			special_matrix[0][6]=5
 			fill_rect(room_matrix,5,1,9,2,999)
 			fill_rect(room_matrix,6,1,6,2,1)
 			fill_rect(room_matrix,1,4,3,8,999)
@@ -220,13 +206,9 @@ func prepare(n):
 			fill_rect(room_matrix,5,6,5,7,0)
 			fill_rect(room_matrix,2,4,3,4,0)
 			fill_rect(room_matrix,8,4,9,4,0)
-			fill_rect(special_matrix,5,1,5,2,4)
 			fill_rect(special_matrix,6,1,6,2,1)
 			fill_rect(special_matrix,5,6,5,7,1)
-			fill_rect(special_matrix,6,6,6,7,5)
-			fill_rect(special_matrix,2,4,3,4,3)
 			fill_rect(special_matrix,2,3,3,3,1)
-			fill_rect(special_matrix,8,4,9,4,2)
 			fill_rect(special_matrix,8,5,9,5,1)
 			fill_rect(room_matrix,2,1,3,2,999)
 			fill_rect(room_matrix,8,2,11,2,999)
@@ -241,11 +223,6 @@ func prepare(n):
 			fill_rect(room_matrix,6,3,11,5,2)
 			fill_rect(room_matrix,0,6,11,8,2)
 			fill_rect(special_matrix,2,1,9,7,1)
-			fill_rect(special_matrix,5,1,6,1,4)
-			special_matrix[9][7]=2
-			special_matrix[2][1]=3
-			special_matrix[9][1]=4
-			special_matrix[2][7]=5
 			room_matrix[2][5]=0
 			room_matrix[9][3]=0
 			fill_rect(special_matrix,3,2,8,6,0)
