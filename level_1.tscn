@@ -746,17 +746,19 @@ position = Vector2(180, 144)
 scale = Vector2(0.32216877, 0.32034194)
 
 [node name="Control" parent="." instance=ExtResource("11_1pe0h")]
-offset_left = -90.0
-offset_top = 252.0
-offset_right = -90.0
-offset_bottom = 252.0
+offset_left = -86.0
+offset_top = 270.0
+offset_right = -86.0
+offset_bottom = 270.0
+scale = Vector2(1.34, 1.34)
 
 [node name="pause" type="TextureButton" parent="."]
-offset_left = 432.0
-offset_top = -18.0
-offset_right = 468.0
-offset_bottom = 18.0
+offset_left = 414.0
+offset_top = -36.0
+offset_right = 486.0
+offset_bottom = 36.0
 texture_normal = ExtResource("12_sof0w")
+stretch_mode = 0
 script = ExtResource("13_ggavl")
 
 [editable path="Lav"]
