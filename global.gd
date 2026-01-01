@@ -1,8 +1,7 @@
 extends Node
 
-var lav_life:int = 100
-var mini_delay := 0.015
-var full_delay := 0.02
+var mini_delay := 0.02
+var full_delay := 0.03
 var wiggle_delay = full_delay*5
 var room_matrix := []
 var hurt_matrix := []
@@ -175,6 +174,7 @@ func prepare(n):
 			rows = 8
 			fill_rect(room_matrix,0,0,cols,rows,1)
 			fill_rect(room_matrix,5,1,9,7,999)
+			fill_rect(room_matrix,1,0,1,3,999)
 			fill_rect(room_matrix,6,1,9,4,1)
 			fill_rect(room_matrix,5,6,9,6,1)
 			room_matrix[10][6]=999

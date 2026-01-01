@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://level_"+str(Global.level)+".tscn")
 	if $quit.button_pressed:
 		Global.toggle = false
-		get_tree().change_scene_to_file("res://start.tscn")
+		get_tree().change_scene_to_file("res://Start.tscn")
 	Global.GridT = $gos.value
 	if Global.toggle:
 		visible = true

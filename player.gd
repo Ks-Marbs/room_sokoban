@@ -18,7 +18,7 @@ var two = preload("res://images/lav.1.1.1.1.2.png")
 var three = preload("res://images/lav.1.1.1.1.3.png")
 
 func control():
-	if not Global.toggle:
+	if not Global.toggle and not Global.clear:
 		if Global.get_matrix(xcell, ycell, Global.room_matrix) == 0:
 			if (Input.is_action_pressed("right") or Input.is_action_pressed("left")) \
 			and Global.get_matrix(xcell+Input.get_axis("left","right"), ycell, Global.room_matrix) != 999:

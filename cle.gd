@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	if $quit.button_pressed:
 		Global.clear = false
 		
-		get_tree().change_scene_to_file("res://start.tscn")
+		get_tree().change_scene_to_file("res://Start.tscn")
 	if Global.clear:
 		if Global.level != 15:
 			Global.save[Global.level+1][4] = 1
