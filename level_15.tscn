@@ -1797,6 +1797,6 @@ script = ExtResource("12_0xcwg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(558, 306)
-zoom = Vector2(1.1, 1.1)
+zoom = Vector2(0.75, 0.75)
 
 [editable path="Lav"]

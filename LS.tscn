@@ -530,10 +530,10 @@ color = Color(0, 0, 0, 0.7607843)
 
 [node name="Title" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(36, 0)
-offset_left = 162.0
-offset_top = -33.0
-offset_right = 279.8889
-offset_bottom = -12.199997
+offset_left = 132.99998
+offset_top = 12.0
+offset_right = 250.88885
+offset_bottom = 32.800003
 scale = Vector2(7.835412, 7.835412)
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -549,13 +549,13 @@ script = SubResource("GDScript_upmy7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
-zoom = Vector2(1.2, 1.2)
+zoom = Vector2(0.7, 0.7)
 
 [node name="1" type="Button" parent="."]
-offset_left = 90.999954
-offset_top = 151.0
-offset_right = 134.99998
-offset_bottom = 195.0
+offset_left = 91.0
+offset_top = 169.0
+offset_right = 135.00003
+offset_bottom = 213.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -568,10 +568,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="2" type="Button" parent="."]
-offset_left = 290.99997
-offset_top = 151.0
-offset_right = 335.0
-offset_bottom = 195.0
+offset_left = 291.0
+offset_top = 169.0
+offset_right = 335.00003
+offset_bottom = 213.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -584,10 +584,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="3" type="Button" parent="."]
-offset_left = 491.0
-offset_top = 151.0
-offset_right = 535.0
-offset_bottom = 195.0
+offset_left = 491.00006
+offset_top = 169.0
+offset_right = 535.00006
+offset_bottom = 213.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -600,10 +600,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="4" type="Button" parent="."]
-offset_left = 690.99994
-offset_top = 151.0
-offset_right = 735.0
-offset_bottom = 195.0
+offset_left = 691.0
+offset_top = 169.0
+offset_right = 735.00006
+offset_bottom = 213.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -616,10 +616,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="5" type="Button" parent="."]
-offset_left = 890.99994
-offset_top = 151.0
-offset_right = 935.0
-offset_bottom = 195.0
+offset_left = 891.0
+offset_top = 169.0
+offset_right = 935.00006
+offset_bottom = 213.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -632,10 +632,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="6" type="Button" parent="."]
-offset_left = 90.999954
-offset_top = 311.0
-offset_right = 134.99998
-offset_bottom = 355.0
+offset_left = 91.0
+offset_top = 329.0
+offset_right = 135.00003
+offset_bottom = 373.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -648,10 +648,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="7" type="Button" parent="."]
-offset_left = 291.0
-offset_top = 311.0
-offset_right = 335.00003
-offset_bottom = 355.0
+offset_left = 291.00006
+offset_top = 329.0
+offset_right = 335.0001
+offset_bottom = 373.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -664,10 +664,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="8" type="Button" parent="."]
-offset_left = 491.0
-offset_top = 311.0
-offset_right = 535.0
-offset_bottom = 355.0
+offset_left = 491.00006
+offset_top = 329.0
+offset_right = 535.00006
+offset_bottom = 373.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -680,10 +680,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="9" type="Button" parent="."]
-offset_left = 690.99994
-offset_top = 311.0
-offset_right = 735.0
-offset_bottom = 355.0
+offset_left = 691.0
+offset_top = 329.0
+offset_right = 735.00006
+offset_bottom = 373.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -696,10 +696,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="10" type="Button" parent="."]
-offset_left = 890.99994
-offset_top = 311.0
-offset_right = 935.0
-offset_bottom = 355.0
+offset_left = 891.0
+offset_top = 329.0
+offset_right = 935.00006
+offset_bottom = 373.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -712,10 +712,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="11" type="Button" parent="."]
-offset_left = 90.999954
-offset_top = 471.0
-offset_right = 134.99998
-offset_bottom = 515.0
+offset_left = 91.0
+offset_top = 489.0
+offset_right = 135.00003
+offset_bottom = 533.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -728,10 +728,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="12" type="Button" parent="."]
-offset_left = 291.0
-offset_top = 471.0
-offset_right = 335.00003
-offset_bottom = 515.0
+offset_left = 291.00006
+offset_top = 489.0
+offset_right = 335.0001
+offset_bottom = 533.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -744,10 +744,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="13" type="Button" parent="."]
-offset_left = 491.0
-offset_top = 471.0
-offset_right = 535.0
-offset_bottom = 515.0
+offset_left = 491.00006
+offset_top = 489.0
+offset_right = 535.00006
+offset_bottom = 533.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -760,10 +760,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="14" type="Button" parent="."]
-offset_left = 690.99994
-offset_top = 471.0
-offset_right = 735.0
-offset_bottom = 515.0
+offset_left = 691.0
+offset_top = 489.0
+offset_right = 735.00006
+offset_bottom = 533.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
@@ -776,10 +776,10 @@ icon_alignment = 1
 script = ExtResource("1_gbtda")
 
 [node name="15" type="Button" parent="."]
-offset_left = 890.99994
-offset_top = 471.0
-offset_right = 935.0
-offset_bottom = 515.0
+offset_left = 891.0
+offset_top = 489.0
+offset_right = 935.00006
+offset_bottom = 533.0
 scale = Vector2(3.1113186, 3.1113186)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24

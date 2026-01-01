@@ -650,7 +650,7 @@ tile_set = SubResource("TileSet_fipem")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(198, 144)
 ignore_rotation = false
-zoom = Vector2(2.3, 2.3)
+zoom = Vector2(1.57, 1.57)
 script = ExtResource("3_lv1pg")
 
 [node name="Lav" parent="." instance=ExtResource("4_1wgld")]
