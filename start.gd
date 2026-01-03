@@ -1,5 +1,5 @@
 extends Node2D
-
+var creds := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,11 +12,19 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://LS.tscn")
 	if $settings.button_pressed:
 		Global.toggle = true
-	if Global.toggle:
+	if $credits.button_pressed:
+		creds = true
+	if Global.toggle or creds:
 		$Title.visible = false
 		$start.visible = false
 		$settings.visible = false
+		$credits.visible = false
 	else:
 		$Title.visible = true
 		$start.visible = true
 		$settings.visible = true
+		$credits.visible = true
+	if creds:
+		$cred.position.y -= 6
+		if $cred.position.y < -5400:
+			creds = false

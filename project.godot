@@ -13,16 +13,18 @@ config_version=5
 config/name="Room-Sokoban"
 run/main_scene="uid://qgjy0uqq07ig"
 config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://global.gd"
+Audio="*res://audio.tscn"
 
 [display]
 
 window/size/viewport_width=1050
-window/size/viewport_height=600
+window/size/viewport_height=612
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
@@ -80,3 +82,4 @@ esc={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

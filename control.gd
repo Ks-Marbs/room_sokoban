@@ -1,5 +1,5 @@
 extends Control
-
+var on:= false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,18 +13,22 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if $lef.button_pressed:
 		Input.action_press("left")
-	else:
-		Input.action_release("left")
+		on = true
 	if $righ.button_pressed:
 		Input.action_press("right")
-	else:
-		Input.action_release("right")
+		on = true
 	if $up.button_pressed:
 		Input.action_press("up")
-	else:
-		Input.action_release("up")
+		on = true
 	if $down.button_pressed:
 		Input.action_press("down")
-	else:
+		on = true
+	if on and not $lef.button_pressed:
+		Input.action_release("left")
+	if  on and not $righ.button_pressed:
+		Input.action_release("right")
+	if  on and not $up.button_pressed:
+		Input.action_release("up")
+	if  on and not $down.button_pressed:
 		Input.action_release("down")
 	pass
