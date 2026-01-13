@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 		$credits.visible = true
 	if creds:
 		if $cred.position.y < -5061:
-			await get_tree().create_timer(Global.wiggle_delay*3).timeout
+			await get_tree().create_timer(Global.wiggle_delay*6).timeout
 			creds = false
 			$cred.position.y = 650
 		else:
