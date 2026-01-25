@@ -1,8 +1,8 @@
 extends Node
 
-var mini_delay := 0.02
-var full_delay := 0.035
-var wiggle_delay = full_delay*5
+var mini_delay := 0.018
+var full_delay := 0.04
+var wiggle_delay = 0.175
 var room_matrix := []
 var special_matrix := []
 var cols = 10

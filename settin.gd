@@ -4,6 +4,7 @@ extends Node2D
 func _ready() -> void:
 	$gos.value = Global.GridT
 	$vol.value = Audio.volume_linear
+	$ind.value = Global.full_delay
 	pass # Replace with function body.
 
 
@@ -20,6 +21,7 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://Start.tscn")
 	Global.GridT = $gos.value
 	Audio.volume_linear = $vol.value
+	Global.full_delay = $ind.value
 	if Global.toggle:
 		visible = true
 	else:
