@@ -216,6 +216,7 @@ func move_step(dir: Vector2,num) -> void:
 		position += dir * Global.step_size
 		await get_tree().create_timer(Global.mini_delay).timeout
 	last_move = dir
+	await get_tree().create_timer(Global.full_delay).timeout
 	xcell = (position.x - (int(position.x) % 36)) / 36
 	ycell = (position.y - (int(position.y) % 36)) / 36
 	Global.x = xcell
