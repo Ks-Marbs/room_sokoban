@@ -1,0 +1,1798 @@
+[gd_scene load_steps=39 format=4 uid="uid://cpt1l5yc1dwrc"]
+
+[ext_resource type="Script" uid="uid://dqfsvggvnc0dp" path="res://first.gd" id="1_1fyt7"]
+[ext_resource type="Texture2D" uid="uid://cifxu36r16yf6" path="res://images/Tiles.png" id="2_ilv3q"]
+[ext_resource type="Script" uid="uid://bls4thtx2l8bo" path="res://thi.gd" id="3_xax4p"]
+[ext_resource type="PackedScene" uid="uid://nmn8nnwaymm3" path="res://player.tscn" id="4_pep13"]
+[ext_resource type="Script" uid="uid://c1y1ql46y7w45" path="res://weight.gd" id="5_wn1mf"]
+[ext_resource type="Texture2D" uid="uid://b3fsxr477i1o2" path="res://images/weight.1.png" id="6_5u35e"]
+[ext_resource type="Script" uid="uid://bymwfndph2ybh" path="res://box_1.gd" id="7_p33wx"]
+[ext_resource type="Texture2D" uid="uid://bbjrudbb3wuxb" path="res://images/box.1.png" id="8_vau3r"]
+[ext_resource type="Script" uid="uid://buoe8h2d8fsvq" path="res://goal.gd" id="9_8wv6x"]
+[ext_resource type="Texture2D" uid="uid://c32nvvx5dpe54" path="res://images/goal1.png" id="10_qwl6p"]
+[ext_resource type="PackedScene" uid="uid://cooh78l4g1j6h" path="res://settings.tscn" id="11_it25m"]
+[ext_resource type="PackedScene" uid="uid://23d48043kb4t" path="res://cle.tscn" id="12_u3cvk"]
+[ext_resource type="Script" uid="uid://cpenahy24crly" path="res://camera_2d.gd" id="13_fieow"]
+[ext_resource type="PackedScene" uid="uid://7a3wlvb055dm" path="res://ctrl.tscn" id="14_7odog"]
+[ext_resource type="Texture2D" uid="uid://cf2yxomaxsn4h" path="res://images/pause.png" id="15_ua2r2"]
+[ext_resource type="Script" uid="uid://df30jy0aafqqa" path="res://pause.gd" id="16_chmdi"]
+[ext_resource type="FontFile" uid="uid://deuu7oag0ombo" path="res://images/something.ttf" id="17_hqeuv"]
+[ext_resource type="Script" uid="uid://c4nh5aw7aungs" path="res://b.gd" id="18_s5rc5"]
+[ext_resource type="Texture2D" uid="uid://djaxyybsgxyue" path="res://images/prb1.png" id="19_rej2k"]
+[ext_resource type="Script" uid="uid://b851baj5drre2" path="res://but.gd" id="20_scmmp"]
+[ext_resource type="Texture2D" uid="uid://cuod07g1of7qx" path="res://images/prl1.png" id="21_w64fd"]
+[ext_resource type="Texture2D" uid="uid://d23dls5qa033m" path="res://images/prc1.png" id="22_g5drd"]
+[ext_resource type="Texture2D" uid="uid://ccjqj5qb05efv" path="res://images/prw1.png" id="23_gd1kw"]
+[ext_resource type="Texture2D" uid="uid://bbltgbec02vbn" path="res://images/shift1.png" id="24_3fdm0"]
+[ext_resource type="Script" uid="uid://dlphke4oy3ds4" path="res://shift.gd" id="25_3p6hb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysiic"]
+texture = ExtResource("2_ilv3q")
+texture_region_size = Vector2i(36, 36)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+13:6/0 = 0
+12:5/0 = 0
+12:4/0 = 0
+11:3/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+10:0/0 = 0
+9:0/0 = 0
+8:0/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+11:5/0 = 0
+10:5/0 = 0
+9:5/0 = 0
+8:5/0 = 0
+13:5/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+13:4/0 = 0
+11:4/0 = 0
+10:4/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+10:3/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+9:2/0 = 0
+8:2/0 = 0
+15:1/0 = 0
+15:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+12:0/0 = 0
+11:0/0 = 0
+7:13/0 = 0
+6:13/0 = 0
+5:13/0 = 0
+4:13/0 = 0
+3:13/0 = 0
+2:13/0 = 0
+1:13/0 = 0
+0:13/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+7:11/0 = 0
+6:11/0 = 0
+5:11/0 = 0
+4:11/0 = 0
+3:11/0 = 0
+2:11/0 = 0
+1:11/0 = 0
+1:10/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+0:11/0 = 0
+11:11/0 = 0
+10:10/0 = 0
+9:10/0 = 0
+8:9/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+10:8/0 = 0
+9:8/0 = 0
+8:8/0 = 0
+10:11/0 = 0
+9:11/0 = 0
+8:11/0 = 0
+8:10/0 = 0
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+12:13/0 = 0
+12:12/0 = 0
+12:11/0 = 0
+12:10/0 = 0
+12:9/0 = 0
+12:8/0 = 0
+12:7/0 = 0
+11:13/0 = 0
+11:14/0 = 0
+10:14/0 = 0
+9:14/0 = 0
+8:14/0 = 0
+8:13/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+10:13/0 = 0
+9:13/0 = 0
+10:9/0 = 0
+9:9/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+6:17/0 = 0
+5:17/0 = 0
+4:17/0 = 0
+3:17/0 = 0
+2:17/0 = 0
+1:17/0 = 0
+0:17/0 = 0
+0:16/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+5:16/0 = 0
+4:16/0 = 0
+3:16/0 = 0
+2:16/0 = 0
+1:16/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+18:1/0 = 0
+18:2/0 = 0
+17:2/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+16:2/0 = 0
+15:3/0 = 0
+14:5/0 = 0
+14:6/0 = 0
+14:7/0 = 0
+14:8/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+21:6/0 = 0
+21:5/0 = 0
+21:4/0 = 0
+20:4/0 = 0
+19:4/0 = 0
+18:4/0 = 0
+17:4/0 = 0
+17:3/0 = 0
+16:3/0 = 0
+16:4/0 = 0
+18:3/0 = 0
+20:5/0 = 0
+20:6/0 = 0
+19:5/0 = 0
+18:5/0 = 0
+17:6/0 = 0
+16:6/0 = 0
+15:6/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+13:7/0 = 0
+13:16/0 = 0
+20:3/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+29:0/0 = 0
+30:0/0 = 0
+31:0/0 = 0
+28:0/0 = 0
+27:0/0 = 0
+19:3/0 = 0
+19:2/0 = 0
+19:1/0 = 0
+20:0/0 = 0
+20:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fipem"]
+resource_local_to_scene = true
+tile_size = Vector2i(36, 36)
+sources/1 = SubResource("TileSetAtlasSource_ysiic")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rvm7b"]
+texture = ExtResource("2_ilv3q")
+texture_region_size = Vector2i(36, 36)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+13:6/0 = 0
+12:5/0 = 0
+12:4/0 = 0
+11:3/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+10:0/0 = 0
+9:0/0 = 0
+8:0/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+11:5/0 = 0
+10:5/0 = 0
+9:5/0 = 0
+8:5/0 = 0
+13:5/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+13:4/0 = 0
+11:4/0 = 0
+10:4/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+10:3/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+9:2/0 = 0
+8:2/0 = 0
+15:1/0 = 0
+15:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+12:0/0 = 0
+11:0/0 = 0
+7:13/0 = 0
+6:13/0 = 0
+5:13/0 = 0
+4:13/0 = 0
+3:13/0 = 0
+2:13/0 = 0
+1:13/0 = 0
+0:13/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+7:11/0 = 0
+6:11/0 = 0
+5:11/0 = 0
+4:11/0 = 0
+3:11/0 = 0
+2:11/0 = 0
+1:11/0 = 0
+1:10/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+0:11/0 = 0
+11:11/0 = 0
+10:10/0 = 0
+9:10/0 = 0
+8:9/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+10:8/0 = 0
+9:8/0 = 0
+8:8/0 = 0
+10:11/0 = 0
+9:11/0 = 0
+8:11/0 = 0
+8:10/0 = 0
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+12:13/0 = 0
+12:12/0 = 0
+12:11/0 = 0
+12:10/0 = 0
+12:9/0 = 0
+12:8/0 = 0
+12:7/0 = 0
+11:13/0 = 0
+11:14/0 = 0
+10:14/0 = 0
+9:14/0 = 0
+8:14/0 = 0
+8:13/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+10:13/0 = 0
+9:13/0 = 0
+10:9/0 = 0
+9:9/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+6:17/0 = 0
+5:17/0 = 0
+4:17/0 = 0
+3:17/0 = 0
+2:17/0 = 0
+1:17/0 = 0
+0:17/0 = 0
+0:16/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+5:16/0 = 0
+4:16/0 = 0
+3:16/0 = 0
+2:16/0 = 0
+1:16/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+18:1/0 = 0
+18:2/0 = 0
+17:2/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+16:2/0 = 0
+15:3/0 = 0
+14:5/0 = 0
+14:6/0 = 0
+14:7/0 = 0
+14:8/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+21:6/0 = 0
+21:5/0 = 0
+21:4/0 = 0
+20:4/0 = 0
+19:4/0 = 0
+18:4/0 = 0
+17:4/0 = 0
+17:3/0 = 0
+16:3/0 = 0
+16:4/0 = 0
+18:3/0 = 0
+20:5/0 = 0
+20:6/0 = 0
+19:5/0 = 0
+18:5/0 = 0
+17:6/0 = 0
+16:6/0 = 0
+15:6/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+13:7/0 = 0
+20:3/0 = 0
+19:3/0 = 0
+20:2/0 = 0
+20:1/0 = 0
+20:0/0 = 0
+19:1/0 = 0
+19:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_uhr3n"]
+resource_local_to_scene = true
+tile_size = Vector2i(36, 36)
+sources/1 = SubResource("TileSetAtlasSource_rvm7b")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y4ft6"]
+texture = ExtResource("2_ilv3q")
+texture_region_size = Vector2i(36, 36)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+13:6/0 = 0
+12:5/0 = 0
+12:4/0 = 0
+11:3/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+10:0/0 = 0
+9:0/0 = 0
+8:0/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+11:5/0 = 0
+10:5/0 = 0
+9:5/0 = 0
+8:5/0 = 0
+13:5/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+13:4/0 = 0
+11:4/0 = 0
+10:4/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+10:3/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+9:2/0 = 0
+8:2/0 = 0
+15:1/0 = 0
+15:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+12:0/0 = 0
+11:0/0 = 0
+7:13/0 = 0
+6:13/0 = 0
+5:13/0 = 0
+4:13/0 = 0
+3:13/0 = 0
+2:13/0 = 0
+1:13/0 = 0
+0:13/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+7:11/0 = 0
+6:11/0 = 0
+5:11/0 = 0
+4:11/0 = 0
+3:11/0 = 0
+2:11/0 = 0
+1:11/0 = 0
+1:10/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+0:11/0 = 0
+11:11/0 = 0
+10:10/0 = 0
+9:10/0 = 0
+8:9/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+10:8/0 = 0
+9:8/0 = 0
+8:8/0 = 0
+10:11/0 = 0
+9:11/0 = 0
+8:11/0 = 0
+8:10/0 = 0
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+12:13/0 = 0
+12:12/0 = 0
+12:11/0 = 0
+12:10/0 = 0
+12:9/0 = 0
+12:8/0 = 0
+12:7/0 = 0
+11:13/0 = 0
+11:14/0 = 0
+10:14/0 = 0
+9:14/0 = 0
+8:14/0 = 0
+8:13/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+10:13/0 = 0
+9:13/0 = 0
+10:9/0 = 0
+9:9/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+6:17/0 = 0
+5:17/0 = 0
+4:17/0 = 0
+3:17/0 = 0
+2:17/0 = 0
+1:17/0 = 0
+0:17/0 = 0
+0:16/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+5:16/0 = 0
+4:16/0 = 0
+3:16/0 = 0
+2:16/0 = 0
+1:16/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+18:1/0 = 0
+18:2/0 = 0
+17:2/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+16:2/0 = 0
+15:3/0 = 0
+14:5/0 = 0
+14:6/0 = 0
+14:7/0 = 0
+14:8/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+21:6/0 = 0
+21:5/0 = 0
+21:4/0 = 0
+20:4/0 = 0
+19:4/0 = 0
+18:4/0 = 0
+17:4/0 = 0
+17:3/0 = 0
+16:3/0 = 0
+16:4/0 = 0
+18:3/0 = 0
+20:5/0 = 0
+20:6/0 = 0
+19:5/0 = 0
+18:5/0 = 0
+17:6/0 = 0
+16:6/0 = 0
+15:6/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+13:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bwrqg"]
+resource_local_to_scene = true
+tile_size = Vector2i(36, 36)
+sources/1 = SubResource("TileSetAtlasSource_y4ft6")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tia2a"]
+size = Vector2(36, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mxjd8"]
+size = Vector2(36, 36)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwbmh"]
+texture = ExtResource("2_ilv3q")
+texture_region_size = Vector2i(36, 36)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+13:6/0 = 0
+12:5/0 = 0
+12:4/0 = 0
+11:3/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+10:0/0 = 0
+9:0/0 = 0
+8:0/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+11:5/0 = 0
+10:5/0 = 0
+9:5/0 = 0
+8:5/0 = 0
+13:5/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+13:4/0 = 0
+11:4/0 = 0
+10:4/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+10:3/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+9:2/0 = 0
+8:2/0 = 0
+15:1/0 = 0
+15:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+12:0/0 = 0
+11:0/0 = 0
+7:13/0 = 0
+6:13/0 = 0
+5:13/0 = 0
+4:13/0 = 0
+3:13/0 = 0
+2:13/0 = 0
+1:13/0 = 0
+0:13/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+7:11/0 = 0
+6:11/0 = 0
+5:11/0 = 0
+4:11/0 = 0
+3:11/0 = 0
+2:11/0 = 0
+1:11/0 = 0
+1:10/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+0:11/0 = 0
+11:11/0 = 0
+10:10/0 = 0
+9:10/0 = 0
+8:9/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+10:8/0 = 0
+9:8/0 = 0
+8:8/0 = 0
+10:11/0 = 0
+9:11/0 = 0
+8:11/0 = 0
+8:10/0 = 0
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+12:13/0 = 0
+12:12/0 = 0
+12:11/0 = 0
+12:10/0 = 0
+12:9/0 = 0
+12:8/0 = 0
+12:7/0 = 0
+11:13/0 = 0
+11:14/0 = 0
+10:14/0 = 0
+9:14/0 = 0
+8:14/0 = 0
+8:13/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+10:13/0 = 0
+9:13/0 = 0
+10:9/0 = 0
+9:9/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+6:17/0 = 0
+5:17/0 = 0
+4:17/0 = 0
+3:17/0 = 0
+2:17/0 = 0
+1:17/0 = 0
+0:17/0 = 0
+0:16/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+5:16/0 = 0
+4:16/0 = 0
+3:16/0 = 0
+2:16/0 = 0
+1:16/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+18:1/0 = 0
+18:2/0 = 0
+17:2/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+16:2/0 = 0
+15:3/0 = 0
+14:5/0 = 0
+14:6/0 = 0
+14:7/0 = 0
+14:8/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+21:6/0 = 0
+21:5/0 = 0
+21:4/0 = 0
+20:4/0 = 0
+19:4/0 = 0
+18:4/0 = 0
+17:4/0 = 0
+17:3/0 = 0
+16:3/0 = 0
+16:4/0 = 0
+18:3/0 = 0
+20:5/0 = 0
+20:6/0 = 0
+19:5/0 = 0
+18:5/0 = 0
+17:6/0 = 0
+16:6/0 = 0
+15:6/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+13:7/0 = 0
+13:16/0 = 0
+20:3/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+29:0/0 = 0
+30:0/0 = 0
+31:0/0 = 0
+28:0/0 = 0
+27:0/0 = 0
+19:3/0 = 0
+19:2/0 = 0
+19:1/0 = 0
+20:0/0 = 0
+20:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rqe21"]
+resource_local_to_scene = true
+tile_size = Vector2i(36, 36)
+sources/1 = SubResource("TileSetAtlasSource_uwbmh")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_msrib"]
+size = Vector2(36, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aesbw"]
+size = Vector2(36, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2b1u"]
+size = Vector2(36, 36)
+
+[node name="Level1" type="Node2D"]
+physics_interpolation_mode = 1
+script = ExtResource("1_1fyt7")
+
+[node name="rooms" type="TileMapLayer" parent="."]
+position = Vector2(-18, -18)
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAMAAAAAAAEAAQABAAMAAGAAAAIAAQABAAMAAGAAAAMAAQABAAMAAGAAAAQAAQABAAMAAGAAAAUAAQAAAAMAAGAAAAYAAQAAAAUAAAAAAAcAAQABAAUAAEAAAAgAAQABAAUAAEABAAAAAQABAAMAAAABAAEAAQACAAQAAAABAAIAAQACAAQAAAABAAMAAQACAAQAAAABAAQAAQACAAQAAAABAAUAAQABAAMAADABAAYAAQABAAUAAAABAAcAAQAFAAUAAAABAAgAAQAFAAUAAAACAAAAAQABAAMAAAACAAEAAQACAAQAAAACAAIAAQACAAQAAAACAAMAAQACAAQAAAACAAQAAQACAAQAAAACAAUAAQAPAAMAADACAAYAAQABAAUAAAACAAcAAQAFAAUAAAACAAgAAQAFAAUAAAADAAAAAQABAAMAAAADAAEAAQACAAQAAAADAAIAAQACAAQAAAADAAMAAQACAAQAAAADAAQAAQACAAQAAAADAAUAAQACAAQAAAADAAYAAQAFAAUAAAADAAcAAQAFAAUAAAADAAgAAQAFAAUAAAAEAAAAAQABAAMAAAAEAAEAAQACAAQAAAAEAAIAAQACAAQAAAAEAAMAAQACAAQAAAAEAAQAAQACAAQAAAAEAAUAAQACAAQAAAAEAAYAAQAFAAUAAAAEAAcAAQAFAAUAAAAEAAgAAQAFAAUAAAAFAAAAAQABAAMAAAAFAAEAAQACAAQAAAAFAAIAAQACAAQAAAAFAAMAAQACAAQAAAAFAAQAAQACAAQAAAAFAAUAAQAPAAMAACAFAAYAAQABAAUAAAAFAAcAAQAFAAUAAAAFAAgAAQAFAAUAAAAGAAAAAQABAAMAAAAGAAEAAQACAAQAAAAGAAIAAQACAAQAAAAGAAMAAQACAAQAAAAGAAQAAQACAAQAAAAGAAUAAQABAAMAADAGAAYAAQABAAUAAAAGAAcAAQAFAAUAAAAGAAgAAQAFAAUAAAAHAAAAAQAAAAMAAFAHAAEAAQAPAAMAAHAHAAIAAQACAAQAAAAHAAMAAQACAAQAAAAHAAQAAQAPAAMAAFAHAAUAAQAAAAMAADAHAAYAAQAAAAUAABAHAAcAAQABAAUAAHAHAAgAAQAFAAUAAAAIAAAAAQAAAAAAAAAIAAEAAQAPAAAAAGAIAAIAAQACAAEAAAAIAAMAAQACAAEAAAAIAAQAAQAPAAAAAEAIAAUAAQAAAAAAAGAIAAYAAQAAAAIAAAAIAAcAAQABAAIAAGAIAAgAAQAFAAIAAAAJAAAAAQABAAAAAAAJAAEAAQACAAEAAAAJAAIAAQACAAEAAAAJAAMAAQACAAEAAAAJAAQAAQACAAEAAAAJAAUAAQABAAAAADAJAAYAAQABAAIAAAAJAAcAAQAFAAIAAAAJAAgAAQAFAAIAAAAKAAAAAQABAAAAAAAKAAEAAQACAAEAAAAKAAIAAQACAAEAAAAKAAMAAQACAAEAAAAKAAQAAQACAAEAAAAKAAUAAQAPAAAAADAKAAYAAQABAAIAAAAKAAcAAQAFAAIAAAAKAAgAAQAFAAIAAAALAAAAAQABAAAAAAALAAEAAQACAAEAAAALAAIAAQACAAEAAAALAAMAAQACAAEAAAALAAQAAQACAAEAAAALAAUAAQACAAEAAAALAAYAAQAFAAIAAAALAAcAAQAFAAIAAAALAAgAAQAFAAIAAAAAAAkAAQABAAUAAEABAAkAAQAFAAUAAAACAAkAAQAFAAUAAAADAAkAAQAFAAUAAAAEAAkAAQAFAAUAAAAFAAkAAQAFAAUAAAAGAAkAAQAFAAUAAAAHAAkAAQAFAAUAAAAIAAkAAQAFAAIAAAAJAAkAAQAFAAIAAAAKAAkAAQAFAAIAAAALAAkAAQAFAAIAAAAMAAAAAQABAAAAAAAMAAEAAQACAAEAAAAMAAIAAQACAAEAAAAMAAMAAQACAAEAAAAMAAQAAQACAAEAAAAMAAUAAQACAAEAAAAMAAYAAQAFAAIAAAAMAAcAAQAFAAIAAAAMAAgAAQAFAAIAAAAMAAkAAQAFAAIAAAAAAAoAAQABAAUAAEABAAoAAQAFAAUAAAACAAoAAQAFAAUAAAADAAoAAQAFAAUAAAAEAAoAAQAFAAUAAAAFAAoAAQAFAAUAAAAGAAoAAQAFAAUAAAAHAAoAAQABAAUAAHAIAAoAAQABAAIAAGAJAAoAAQAFAAIAAAAKAAoAAQAFAAIAAAALAAoAAQAFAAIAAAAMAAoAAQAFAAIAAAANAAAAAQABAAAAAAANAAEAAQACAAEAAAANAAIAAQACAAEAAAANAAMAAQACAAEAAAANAAQAAQACAAEAAAANAAUAAQAPAAAAACANAAYAAQABAAIAAAANAAcAAQAFAAIAAAANAAgAAQAFAAIAAAANAAkAAQAFAAIAAAANAAoAAQAFAAIAAAAAAAsAAQAAAAUAAGABAAsAAQABAAUAACACAAsAAQABAAUAACADAAsAAQABAAUAACAEAAsAAQABAAUAACAFAAsAAQABAAUAACAGAAsAAQABAAUAACAHAAsAAQAAAAUAADAIAAsAAQAAAAIAAGAJAAsAAQABAAIAADAKAAsAAQABAAIAADALAAsAAQABAAIAADAMAAsAAQABAAIAADANAAsAAQABAAIAADAOAAAAAQABAAAAAAAOAAEAAQACAAEAAAAOAAIAAQACAAEAAAAOAAMAAQACAAEAAAAOAAQAAQACAAEAAAAOAAUAAQABAAAAADAOAAYAAQABAAIAAAAOAAcAAQAFAAIAAAAOAAgAAQAFAAIAAAAOAAkAAQAFAAIAAAAOAAoAAQAFAAIAAAAOAAsAAQABAAIAADAPAAAAAQAAAAAAAFAPAAEAAQABAAAAAFAPAAIAAQABAAAAAFAPAAMAAQABAAAAAFAPAAQAAQABAAAAAFAPAAUAAQAAAAAAADAPAAYAAQAAAAIAAFAPAAcAAQABAAIAAFAPAAgAAQABAAIAAFAPAAkAAQABAAIAAFAPAAoAAQABAAIAAFAPAAsAAQAAAAIAADA=")
+tile_set = SubResource("TileSet_fipem")
+
+[node name="things" type="TileMapLayer" parent="."]
+position = Vector2(-18, -18)
+tile_map_data = PackedByteArray("AAAHAAYAAQADAA0AAAAIAAUAAQADAAsAAAAIAAYAAQADAAwAAAAHAAUAAQADAA4AAAAPAAAAAQAEAAwAAAAPAAsAAQAEAA4AAAAAAAsAAQAEAA0AAAAAAAAAAQAEAAsAAAAAAAUAAQADAAoAAAAHAAAAAQAEAAoAAAAPAAYAAQADAAoAAAAIAAsAAQAEAAoAAAAIAAAAAQAJAAsAAAAPAAUAAQAJAAsAAAAHAAsAAQAJAAsAAAAAAAYAAQAJAAsAAAAKAAkAAQAJAAoAAAAHAAQAAQABAAcAAAAHAAMAAQAAAAcAAAAHAAIAAQAAAAcAAAAHAAEAAQABAAcAAAAGAAEAAQABAAcAAAAGAAAAAQABAAcAAAAFAAAAAQAEAAgAAAAEAAAAAQABAAcAAAADAAAAAQABAAcAAAACAAAAAQABAAcAAAABAAAAAQABAAcAAAABAAEAAQABAA0AAAAAAAEAAQAAAA0AAAAAAAIAAQABAAcAAAAAAAMAAQABAAcAAAAAAAQAAQABAAcAAAABAAQAAQABAAcAAAABAAMAAQABAAcAAAABAAIAAQABAAcAAAACAAIAAQABAAcAAAACAAEAAQACAA0AAAADAAEAAQABAAcAAAADAAIAAQABAAcAAAADAAMAAQABAAcAAAACAAMAAQABAAcAAAACAAQAAQABAAcAAAACAAUAAQABAAcAAAABAAUAAQABAAcAAAABAAYAAQAEAAcAAAABAAcAAQAEAAcAAAAAAAcAAQAEAAcAAAAAAAgAAQAAAA4AAAAAAAkAAQAEAAcAAAAAAAoAAQAEAAcAAAABAAoAAQAEAAcAAAABAAkAAQAEAAcAAAABAAgAAQABAA4AAAACAAgAAQACAA4AAAACAAcAAQAEAAcAAAACAAYAAQAEAAcAAAADAAYAAQAEAAcAAAADAAUAAQAAAAcAAAADAAQAAQABAAcAAAAEAAQAAQABAAcAAAAEAAMAAQABAAcAAAAEAAIAAQABAAcAAAAEAAEAAQABAAcAAAAFAAEAAQAEAAkAAAAFAAIAAQAEAAoAAAAFAAMAAQABAAcAAAAFAAQAAQABAAcAAAAFAAUAAQABAAcAAAAEAAUAAQAAAAcAAAAEAAYAAQAEAAcAAAAEAAcAAQAEAAcAAAADAAcAAQAEAAcAAAADAAgAAQAEAAcAAAADAAkAAQAEAAcAAAACAAkAAQAEAAcAAAACAAoAAQAEAAcAAAACAAsAAQAEAAcAAAABAAsAAQAEAAcAAAADAAsAAQAKAAsAAAADAAoAAQAKAAoAAAAEAAoAAQAEAAcAAAAEAAkAAQAEAAcAAAAEAAgAAQAEAAcAAAAFAAgAAQAEAAcAAAAFAAcAAQAEAAcAAAAFAAYAAQAEAAcAAAAGAAYAAQAEAAcAAAAGAAUAAQADAAoAAAAGAAQAAQADAAkAAAAGAAMAAQABAAcAAAAGAAIAAQABAAcAAAAGAAcAAQAEAAcAAAAGAAgAAQAEAAcAAAAGAAkAAQAEAAcAAAAFAAkAAQAEAAcAAAAFAAoAAQAEAAcAAAAFAAsAAQAEAAcAAAAEAAsAAQAEAAcAAAAGAAsAAQAEAAcAAAAGAAoAAQAEAAcAAAAHAAoAAQAEAAcAAAAHAAkAAQAAAAcAAAAHAAgAAQAAAAcAAAAHAAcAAQAEAAcAAAAIAAcAAQADAAcAAAAIAAgAAQADAAcAAAAIAAkAAQADAAcAAAAIAAoAAQADAAcAAAAJAAoAAQADAAcAAAAJAAkAAQADAAcAAAAJAAgAAQADAAcAAAAJAAcAAQADAAcAAAAJAAYAAQADAAcAAAAJAAUAAQACAAcAAAAJAAQAAQACAAcAAAAJAAMAAQACAAcAAAAJAAIAAQACAAcAAAAJAAEAAQACAAcAAAAJAAAAAQACAAcAAAAKAAAAAQACAAcAAAAKAAEAAQACAAcAAAAKAAIAAQACAAcAAAAKAAMAAQACAAcAAAAKAAQAAQACAAcAAAAKAAUAAQACAAcAAAAKAAYAAQADAAcAAAAKAAcAAQADAAcAAAAKAAgAAQADAAcAAAALAAgAAQADAAcAAAALAAcAAQADAAcAAAALAAYAAQADAAcAAAALAAUAAQAAAAcAAAALAAQAAQACAAcAAAALAAMAAQACAAcAAAALAAIAAQACAAcAAAALAAEAAQACAAcAAAALAAAAAQACAAcAAAAMAAAAAQACAAcAAAAMAAEAAQACAAcAAAAMAAIAAQACAAcAAAAMAAMAAQACAAcAAAAMAAQAAQACAAcAAAAMAAUAAQAAAAcAAAAMAAYAAQADAAcAAAAMAAcAAQADAAcAAAAMAAgAAQADAAcAAAAMAAkAAQADAAcAAAALAAkAAQADAAcAAAALAAoAAQADAAcAAAAKAAoAAQADAAcAAAAKAAsAAQADAAcAAAAJAAsAAQADAAcAAAALAAsAAQADAAcAAAAMAAsAAQADAAcAAAAMAAoAAQADAAcAAAANAAoAAQADAAcAAAANAAkAAQADAAcAAAANAAgAAQADAAcAAAANAAcAAQADAAcAAAANAAYAAQADAAcAAAANAAUAAQACAAcAAAANAAQAAQACAAcAAAANAAMAAQACAAcAAAANAAIAAQACAAcAAAANAAEAAQACAAcAAAANAAAAAQACAAcAAAAOAAAAAQACAAcAAAAOAAEAAQACAAcAAAAOAAIAAQACAAcAAAAOAAMAAQACAAcAAAAOAAQAAQACAAcAAAAOAAUAAQACAAcAAAAOAAYAAQADAAcAAAAOAAcAAQADAAcAAAAOAAgAAQADAAcAAAAOAAkAAQADAAcAAAAOAAoAAQADAAcAAAAOAAsAAQADAAcAAAANAAsAAQADAAcAAAAPAAoAAQADAAcAAAAPAAkAAQADAAcAAAAPAAgAAQADAAcAAAAPAAcAAQADAAcAAAAPAAQAAQACAAcAAAAPAAMAAQACAAcAAAAPAAIAAQACAAcAAAAPAAEAAQACAAcAAAAIAAEAAQACAAcAAAAIAAIAAQACAAcAAAAIAAMAAQACAAcAAAAIAAQAAQACAAcAAAA=")
+tile_set = SubResource("TileSet_uhr3n")
+
+[node name="ice" type="TileMapLayer" parent="."]
+position = Vector2(-18, -18)
+tile_map_data = PackedByteArray("AAAKAAIAAQACAAYAAAAKAAMAAQACAAYAAAAKAAQAAQACAAYAAAALAAIAAQACAAYAAAALAAMAAQACAAYAAAALAAQAAQACAAYAAAAMAAIAAQACAAYAAAAMAAMAAQACAAYAAAAMAAQAAQACAAYAAAANAAIAAQACAAYAAAANAAMAAQACAAYAAAANAAQAAQACAAYAAAAOAAIAAQACAAYAAAAOAAMAAQACAAYAAAAOAAQAAQACAAYAAAAJAAEAAQACAAYAAAAJAAIAAQACAAYAAAAJAAMAAQACAAYAAAAJAAQAAQACAAYAAAAKAAEAAQACAAYAAAALAAEAAQACAAYAAAAMAAEAAQACAAYAAAANAAEAAQACAAYAAAAOAAEAAQACAAYAAAAMAAAAAQACAAYAAAALAAAAAQACAAYAAAA=")
+tile_set = SubResource("TileSet_bwrqg")
+script = ExtResource("3_xax4p")
+
+[node name="Lav" parent="." instance=ExtResource("4_pep13")]
+z_index = 3
+position = Vector2(0, 72)
+input_pickable = false
+priority = 1
+
+[node name="Sprite2d" parent="Lav" index="0"]
+offset = Vector2(0, -1)
+
+[node name="CollisionShape2d" parent="Lav" index="1"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" parent="Lav" index="2"]
+target_position = Vector2(0, 18.1)
+
+[node name="UpRay" parent="Lav" index="3"]
+target_position = Vector2(0, -18.1)
+
+[node name="RightRay" parent="Lav" index="4"]
+target_position = Vector2(18.1, 0)
+
+[node name="Weight" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(72, 108)
+script = ExtResource("5_wn1mf")
+
+[node name="Sprite2d" type="Sprite2D" parent="Weight"]
+texture = ExtResource("6_5u35e")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Weight"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" type="RayCast2D" parent="Weight"]
+target_position = Vector2(0, 19)
+collide_with_areas = true
+
+[node name="UpRay" type="RayCast2D" parent="Weight"]
+target_position = Vector2(0, -19)
+collide_with_areas = true
+
+[node name="RightRay" type="RayCast2D" parent="Weight"]
+target_position = Vector2(19, 0)
+collide_with_areas = true
+
+[node name="LeftRay" type="RayCast2D" parent="Weight"]
+target_position = Vector2(-19, 0)
+collide_with_areas = true
+
+[node name="Weight2" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(468, 72)
+script = ExtResource("5_wn1mf")
+
+[node name="Sprite2d" type="Sprite2D" parent="Weight2"]
+texture = ExtResource("6_5u35e")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Weight2"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" type="RayCast2D" parent="Weight2"]
+target_position = Vector2(0, 19)
+collide_with_areas = true
+
+[node name="UpRay" type="RayCast2D" parent="Weight2"]
+target_position = Vector2(0, -19)
+collide_with_areas = true
+
+[node name="RightRay" type="RayCast2D" parent="Weight2"]
+target_position = Vector2(19, 0)
+collide_with_areas = true
+
+[node name="LeftRay" type="RayCast2D" parent="Weight2"]
+target_position = Vector2(-19, 0)
+collide_with_areas = true
+
+[node name="Weight3" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(360, 288)
+script = ExtResource("5_wn1mf")
+
+[node name="Sprite2d" type="Sprite2D" parent="Weight3"]
+texture = ExtResource("6_5u35e")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Weight3"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" type="RayCast2D" parent="Weight3"]
+target_position = Vector2(0, 19)
+collide_with_areas = true
+
+[node name="UpRay" type="RayCast2D" parent="Weight3"]
+target_position = Vector2(0, -19)
+collide_with_areas = true
+
+[node name="RightRay" type="RayCast2D" parent="Weight3"]
+target_position = Vector2(19, 0)
+collide_with_areas = true
+
+[node name="LeftRay" type="RayCast2D" parent="Weight3"]
+target_position = Vector2(-19, 0)
+collide_with_areas = true
+
+[node name="Weight4" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(180, 360)
+script = ExtResource("5_wn1mf")
+
+[node name="Sprite2d" type="Sprite2D" parent="Weight4"]
+texture = ExtResource("6_5u35e")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Weight4"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" type="RayCast2D" parent="Weight4"]
+target_position = Vector2(0, 19)
+collide_with_areas = true
+
+[node name="UpRay" type="RayCast2D" parent="Weight4"]
+target_position = Vector2(0, -19)
+collide_with_areas = true
+
+[node name="RightRay" type="RayCast2D" parent="Weight4"]
+target_position = Vector2(19, 0)
+collide_with_areas = true
+
+[node name="LeftRay" type="RayCast2D" parent="Weight4"]
+target_position = Vector2(-19, 0)
+collide_with_areas = true
+
+[node name="Box" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(468, 252)
+script = ExtResource("7_p33wx")
+
+[node name="Sprite2d" type="Sprite2D" parent="Box"]
+texture = ExtResource("8_vau3r")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Box"]
+shape = SubResource("RectangleShape2D_tia2a")
+
+[node name="DownRay" type="RayCast2D" parent="Box"]
+target_position = Vector2(0, 19)
+collide_with_areas = true
+
+[node name="UpRay" type="RayCast2D" parent="Box"]
+target_position = Vector2(0, -19)
+collide_with_areas = true
+
+[node name="RightRay" type="RayCast2D" parent="Box"]
+target_position = Vector2(19, 0)
+collide_with_areas = true
+
+[node name="LeftRay" type="RayCast2D" parent="Box"]
+target_position = Vector2(-19, 0)
+collide_with_areas = true
+
+[node name="Goal" type="Area2D" parent="."]
+position = Vector2(36, 0)
+script = ExtResource("9_8wv6x")
+
+[node name="Sprite2d" type="Sprite2D" parent="Goal"]
+self_modulate = Color(1, 1, 1, 0.45490196)
+texture = ExtResource("10_qwl6p")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Goal"]
+shape = SubResource("RectangleShape2D_mxjd8")
+
+[node name="Ray" type="RayCast2D" parent="Goal"]
+position = Vector2(18, 0)
+target_position = Vector2(0, 0)
+collide_with_areas = true
+
+[node name="sets" parent="." instance=ExtResource("11_it25m")]
+visible = false
+z_index = 15
+position = Vector2(270, 216.00002)
+scale = Vector2(0.6, 0.6)
+
+[node name="cle" parent="." instance=ExtResource("12_u3cvk")]
+visible = false
+z_index = 4
+position = Vector2(270, 197.99998)
+scale = Vector2(0.4, 0.398)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(270, 198)
+scale = Vector2(1.2, 1.2)
+ignore_rotation = false
+zoom = Vector2(1.2, 1.2)
+script = ExtResource("13_fieow")
+
+[node name="Control" parent="." instance=ExtResource("14_7odog")]
+offset_left = -90.00001
+offset_top = 378.00003
+offset_right = -90.00001
+offset_bottom = 378.00003
+scale = Vector2(1.3, 1.3)
+
+[node name="pause" type="TextureButton" parent="."]
+offset_left = 594.0
+offset_top = -18.0
+offset_right = 666.0
+offset_bottom = 54.0
+scale = Vector2(1.3, 1.3)
+texture_normal = ExtResource("15_ua2r2")
+stretch_mode = 0
+script = ExtResource("16_chmdi")
+
+[node name="num" type="RichTextLabel" parent="."]
+offset_left = -144.0
+offset_top = -36.0
+offset_right = -74.0
+offset_bottom = 19.0
+scale = Vector2(1.3, 1.3)
+theme_override_fonts/normal_font = ExtResource("17_hqeuv")
+theme_override_font_sizes/normal_font_size = 40
+text = "13"
+
+[node name="grid" type="TileMapLayer" parent="."]
+modulate = Color(1, 1, 1, 0.73333335)
+position = Vector2(-18, -18)
+tile_map_data = PackedByteArray("AAALAAIAAQAHAAYAAAALAAEAAQAHAAYAAAALAAAAAQAHAAYAAAAKAAAAAQAHAAYAAAAJAAAAAQAHAAYAAAAIAAAAAQAHAAYAAAAHAAAAAQAHAAYAAAAGAAAAAQAHAAYAAAAFAAAAAQAHAAYAAAAEAAAAAQAHAAYAAAADAAAAAQAHAAYAAAACAAAAAQAHAAYAAAABAAAAAQAHAAYAAAAAAAAAAQAHAAYAAAAAAAEAAQAHAAYAAAAAAAIAAQAHAAYAAAAAAAMAAQAHAAYAAAAAAAQAAQAHAAYAAAAAAAUAAQAHAAYAAAAAAAYAAQAHAAYAAAAAAAcAAQAHAAYAAAAAAAgAAQAHAAYAAAABAAgAAQAHAAYAAAABAAcAAQAHAAYAAAABAAYAAQAHAAYAAAABAAUAAQAHAAYAAAABAAQAAQAHAAYAAAABAAMAAQAHAAYAAAABAAIAAQAHAAYAAAABAAEAAQAHAAYAAAACAAEAAQAHAAYAAAACAAIAAQAHAAYAAAACAAMAAQAHAAYAAAACAAQAAQAHAAYAAAACAAUAAQAHAAYAAAACAAYAAQAHAAYAAAACAAcAAQAHAAYAAAACAAgAAQAHAAYAAAADAAgAAQAHAAYAAAADAAcAAQAHAAYAAAADAAYAAQAHAAYAAAADAAUAAQAHAAYAAAADAAQAAQAHAAYAAAADAAMAAQAHAAYAAAADAAIAAQAHAAYAAAADAAEAAQAHAAYAAAAEAAEAAQAHAAYAAAAEAAIAAQAHAAYAAAAEAAMAAQAHAAYAAAAEAAQAAQAHAAYAAAAEAAUAAQAHAAYAAAAEAAYAAQAHAAYAAAAEAAcAAQAHAAYAAAAEAAgAAQAHAAYAAAAFAAgAAQAHAAYAAAAFAAcAAQAHAAYAAAAFAAYAAQAHAAYAAAAFAAUAAQAHAAYAAAAFAAQAAQAHAAYAAAAFAAMAAQAHAAYAAAAFAAIAAQAHAAYAAAAFAAEAAQAHAAYAAAAGAAEAAQAHAAYAAAAGAAIAAQAHAAYAAAAGAAMAAQAHAAYAAAAGAAQAAQAHAAYAAAAGAAUAAQAHAAYAAAAGAAYAAQAHAAYAAAAGAAcAAQAHAAYAAAAGAAgAAQAHAAYAAAAHAAgAAQAHAAYAAAAHAAcAAQAHAAYAAAAHAAYAAQAHAAYAAAAHAAUAAQAHAAYAAAAHAAQAAQAHAAYAAAAHAAMAAQAHAAYAAAAHAAIAAQAHAAYAAAAHAAEAAQAHAAYAAAAIAAEAAQAHAAYAAAAIAAIAAQAHAAYAAAAIAAMAAQAHAAYAAAAIAAQAAQAHAAYAAAAIAAUAAQAHAAYAAAAIAAYAAQAHAAYAAAAIAAcAAQAHAAYAAAAIAAgAAQAHAAYAAAAJAAgAAQAHAAYAAAAJAAcAAQAHAAYAAAAJAAYAAQAHAAYAAAAJAAUAAQAHAAYAAAAJAAQAAQAHAAYAAAAJAAMAAQAHAAYAAAAJAAIAAQAHAAYAAAAJAAEAAQAHAAYAAAAKAAEAAQAHAAYAAAAKAAIAAQAHAAYAAAAKAAMAAQAHAAYAAAAKAAQAAQAHAAYAAAAKAAUAAQAHAAYAAAAKAAYAAQAHAAYAAAAKAAcAAQAHAAYAAAAKAAgAAQAHAAYAAAALAAgAAQAHAAYAAAALAAcAAQAHAAYAAAALAAYAAQAHAAYAAAALAAUAAQAHAAYAAAALAAQAAQAHAAYAAAALAAMAAQAHAAYAAAAAAAkAAQAHAAYAAAAAAAoAAQAHAAYAAAAAAAsAAQAHAAYAAAABAAkAAQAHAAYAAAABAAoAAQAHAAYAAAABAAsAAQAHAAYAAAACAAkAAQAHAAYAAAACAAoAAQAHAAYAAAACAAsAAQAHAAYAAAADAAkAAQAHAAYAAAADAAoAAQAHAAYAAAADAAsAAQAHAAYAAAAEAAkAAQAHAAYAAAAEAAoAAQAHAAYAAAAEAAsAAQAHAAYAAAAFAAkAAQAHAAYAAAAFAAoAAQAHAAYAAAAFAAsAAQAHAAYAAAAGAAkAAQAHAAYAAAAGAAoAAQAHAAYAAAAGAAsAAQAHAAYAAAAHAAkAAQAHAAYAAAAHAAoAAQAHAAYAAAAHAAsAAQAHAAYAAAAIAAkAAQAHAAYAAAAIAAoAAQAHAAYAAAAIAAsAAQAHAAYAAAAJAAkAAQAHAAYAAAAJAAoAAQAHAAYAAAAJAAsAAQAHAAYAAAAKAAkAAQAHAAYAAAAKAAoAAQAHAAYAAAAKAAsAAQAHAAYAAAALAAkAAQAHAAYAAAALAAoAAQAHAAYAAAALAAsAAQAHAAYAAAAMAAAAAQAHAAYAAAAMAAEAAQAHAAYAAAAMAAIAAQAHAAYAAAAMAAMAAQAHAAYAAAAMAAQAAQAHAAYAAAAMAAUAAQAHAAYAAAAMAAYAAQAHAAYAAAAMAAcAAQAHAAYAAAAMAAgAAQAHAAYAAAAMAAkAAQAHAAYAAAAMAAoAAQAHAAYAAAAMAAsAAQAHAAYAAAANAAAAAQAHAAYAAAANAAEAAQAHAAYAAAANAAIAAQAHAAYAAAANAAMAAQAHAAYAAAANAAQAAQAHAAYAAAANAAUAAQAHAAYAAAANAAYAAQAHAAYAAAANAAcAAQAHAAYAAAANAAgAAQAHAAYAAAANAAkAAQAHAAYAAAANAAoAAQAHAAYAAAANAAsAAQAHAAYAAAAOAAAAAQAHAAYAAAAOAAEAAQAHAAYAAAAOAAIAAQAHAAYAAAAOAAMAAQAHAAYAAAAOAAQAAQAHAAYAAAAOAAUAAQAHAAYAAAAOAAYAAQAHAAYAAAAOAAcAAQAHAAYAAAAOAAgAAQAHAAYAAAAOAAkAAQAHAAYAAAAOAAoAAQAHAAYAAAAOAAsAAQAHAAYAAAAPAAAAAQAHAAYAAAAPAAEAAQAHAAYAAAAPAAIAAQAHAAYAAAAPAAMAAQAHAAYAAAAPAAQAAQAHAAYAAAAPAAUAAQAHAAYAAAAPAAYAAQAHAAYAAAAPAAcAAQAHAAYAAAAPAAgAAQAHAAYAAAAPAAkAAQAHAAYAAAAPAAoAAQAHAAYAAAAPAAsAAQAHAAYAAAA=")
+tile_set = SubResource("TileSet_rqe21")
+
+[node name="b" type="Area2D" parent="."]
+position = Vector2(0, 252)
+script = ExtResource("18_s5rc5")
+
+[node name="but" type="Sprite2D" parent="b"]
+self_modulate = Color(1, 1, 1, 0.45490196)
+texture = ExtResource("19_rej2k")
+script = ExtResource("20_scmmp")
+
+[node name="brl1" type="Sprite2D" parent="b" groups=["brlb"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(36, 0)
+texture = ExtResource("21_w64fd")
+
+[node name="brc1" type="Sprite2D" parent="b" groups=["brcb"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(72, -35.999992)
+texture = ExtResource("22_g5drd")
+
+[node name="brc2" type="Sprite2D" parent="b" groups=["brcb"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(72, -3.8146973e-06)
+rotation = 3.1415927
+texture = ExtResource("22_g5drd")
+
+[node name="w1" type="Sprite2D" parent="b" groups=["wb"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(108, -36)
+texture = ExtResource("23_gd1kw")
+
+[node name="w2" type="Sprite2D" parent="b" groups=["wb"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(144, -36)
+texture = ExtResource("23_gd1kw")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="b"]
+shape = SubResource("RectangleShape2D_msrib")
+
+[node name="Ray" type="RayCast2D" parent="b"]
+position = Vector2(18, 0)
+target_position = Vector2(0, 0)
+collide_with_areas = true
+
+[node name="shift" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(360, 216)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift2" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(396, 288)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift3" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(432, 252)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift4" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(468, 216)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift19" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(504, 216)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift20" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(504, 252)
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift21" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(504, 288)
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift22" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(504, 324)
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift23" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(504, 360)
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift24" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(468, 288)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift27" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(396, 252)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift5" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(324, 288)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift6" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(360, 252)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift7" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(324, 252)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift8" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(288, 252)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift9" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(288, 288)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift10" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(324, 324)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift11" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(432, 216)
+rotation = -1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift12" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(288, 360)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift13" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(360, 360)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift14" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(468, 324)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift15" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(432, 288)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift17" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(396, 324)
+rotation = 3.1415927
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift18" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(396, 360)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift25" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(432, 360)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="shift26" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(468, 360)
+rotation = 1.5707964
+texture = ExtResource("24_3fdm0")
+script = ExtResource("25_3p6hb")
+
+[node name="c" type="Area2D" parent="."]
+position = Vector2(36, 324)
+script = ExtResource("18_s5rc5")
+
+[node name="but" type="Sprite2D" parent="c"]
+self_modulate = Color(1, 1, 1, 0.45490196)
+texture = ExtResource("19_rej2k")
+script = ExtResource("20_scmmp")
+
+[node name="brl8" type="Sprite2D" parent="c" groups=["brlc"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(72, -36)
+rotation = -1.5707964
+texture = ExtResource("21_w64fd")
+
+[node name="brl7" type="Sprite2D" parent="c" groups=["brlc"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(36, 0)
+rotation = -3.1415927
+texture = ExtResource("21_w64fd")
+
+[node name="brc1" type="Sprite2D" parent="c" groups=["brcc"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(72, 0)
+rotation = 3.1415927
+texture = ExtResource("22_g5drd")
+
+[node name="w1" type="Sprite2D" parent="c" groups=["wc"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(72, -72)
+rotation = 1.5707964
+texture = ExtResource("23_gd1kw")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="c"]
+shape = SubResource("RectangleShape2D_aesbw")
+
+[node name="Ray" type="RayCast2D" parent="c"]
+position = Vector2(18, 3.14722e-06)
+target_position = Vector2(0, 0)
+collide_with_areas = true
+
+[node name="d" type="Area2D" parent="."]
+position = Vector2(144, 252)
+script = ExtResource("18_s5rc5")
+
+[node name="but" type="Sprite2D" parent="d"]
+self_modulate = Color(1, 1, 1, 0.45490196)
+rotation = 1.5707964
+texture = ExtResource("19_rej2k")
+script = ExtResource("20_scmmp")
+
+[node name="brl1" type="Sprite2D" parent="d" groups=["brld"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(-7.6293945e-06, 36)
+rotation = -1.5707964
+texture = ExtResource("21_w64fd")
+
+[node name="brc1" type="Sprite2D" parent="d" groups=["brcd"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(0, 72)
+rotation = -1.5707964
+texture = ExtResource("22_g5drd")
+
+[node name="w1" type="Sprite2D" parent="d" groups=["wd"]]
+self_modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(36, 72)
+texture = ExtResource("23_gd1kw")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="d"]
+shape = SubResource("RectangleShape2D_i2b1u")
+
+[node name="Ray" type="RayCast2D" parent="d"]
+position = Vector2(18, 3.14722e-06)
+target_position = Vector2(0, 0)
+collide_with_areas = true
+
+[editable path="Lav"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ci0i05jpt787v" path="res://ls.gd" id="1_gbtda"]
 [ext_resource type="Texture2D" uid="uid://cifxu36r16yf6" path="res://images/Tiles.png" id="3_7wn5r"]
-[ext_resource type="FontFile" uid="uid://djfbke8b4o6dx" path="res://images/something.ttf" id="4_7qp7n"]
+[ext_resource type="FontFile" uid="uid://deuu7oag0ombo" path="res://images/something.ttf" id="4_7qp7n"]
 [ext_resource type="Texture2D" uid="uid://dmqhtieqm43tn" path="res://images/ls.png" id="5_mtna8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ofpn"]
@@ -482,20 +482,20 @@ tile_set = SubResource("TileSet_iw2cp")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = 7
-offset_left = -31.0
-offset_top = -21.0
-offset_right = 1197.0
-offset_bottom = 678.0
+offset_left = -114.0
+offset_top = -83.0
+offset_right = 1216.0
+offset_bottom = 701.0
 color = Color(0.050510757, 0.050510757, 0.05051074, 0.94509804)
 
 [node name="Title" type="RichTextLabel" parent="."]
 z_index = 13
 custom_minimum_size = Vector2(36, 0)
-offset_left = 132.99998
-offset_top = 12.0
-offset_right = 250.88885
-offset_bottom = 32.800003
-scale = Vector2(7.835412, 7.835412)
+offset_left = 176.0
+offset_top = -71.00001
+offset_right = 293.88885
+offset_bottom = -50.200005
+scale = Vector2(7, 7)
 size_flags_horizontal = 3
 size_flags_vertical = 0
 size_flags_stretch_ratio = 20.0
@@ -509,16 +509,16 @@ tab_size = 1
 script = SubResource("GDScript_upmy7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 324)
-zoom = Vector2(0.7, 0.7)
+position = Vector2(571, 307)
+zoom = Vector2(0.85, 0.85)
 
 [node name="1" type="Button" parent="."]
 z_index = 13
-offset_left = 91.0
-offset_top = 169.0
-offset_right = 135.00003
-offset_bottom = 213.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 69.0
+offset_top = 86.0
+offset_right = 114.0
+offset_bottom = 130.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -531,11 +531,11 @@ script = ExtResource("1_gbtda")
 
 [node name="2" type="Button" parent="."]
 z_index = 13
-offset_left = 291.0
-offset_top = 169.0
-offset_right = 335.00003
-offset_bottom = 213.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 295.0
+offset_top = 86.0
+offset_right = 340.0
+offset_bottom = 130.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -548,11 +548,11 @@ script = ExtResource("1_gbtda")
 
 [node name="3" type="Button" parent="."]
 z_index = 13
-offset_left = 491.00006
-offset_top = 169.0
-offset_right = 535.00006
-offset_bottom = 213.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 519.00006
+offset_top = 86.0
+offset_right = 564.00006
+offset_bottom = 130.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -565,11 +565,11 @@ script = ExtResource("1_gbtda")
 
 [node name="4" type="Button" parent="."]
 z_index = 13
-offset_left = 691.0
-offset_top = 169.0
-offset_right = 735.00006
-offset_bottom = 213.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 759.0
+offset_top = 86.0
+offset_right = 804.0
+offset_bottom = 130.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -582,11 +582,11 @@ script = ExtResource("1_gbtda")
 
 [node name="5" type="Button" parent="."]
 z_index = 13
-offset_left = 891.0
-offset_top = 169.0
-offset_right = 935.00006
-offset_bottom = 213.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 983.0
+offset_top = 86.0
+offset_right = 1028.0
+offset_bottom = 130.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -599,11 +599,11 @@ script = ExtResource("1_gbtda")
 
 [node name="6" type="Button" parent="."]
 z_index = 13
-offset_left = 91.0
-offset_top = 329.0
-offset_right = 135.00003
-offset_bottom = 373.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 69.0
+offset_top = 230.0
+offset_right = 114.0
+offset_bottom = 274.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -616,11 +616,11 @@ script = ExtResource("1_gbtda")
 
 [node name="7" type="Button" parent="."]
 z_index = 13
-offset_left = 291.00006
-offset_top = 329.0
-offset_right = 335.0001
-offset_bottom = 373.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 295.00006
+offset_top = 230.0
+offset_right = 340.00006
+offset_bottom = 274.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -633,11 +633,11 @@ script = ExtResource("1_gbtda")
 
 [node name="8" type="Button" parent="."]
 z_index = 13
-offset_left = 491.00006
-offset_top = 329.0
-offset_right = 535.00006
-offset_bottom = 373.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 519.00006
+offset_top = 230.0
+offset_right = 564.00006
+offset_bottom = 274.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -650,11 +650,11 @@ script = ExtResource("1_gbtda")
 
 [node name="9" type="Button" parent="."]
 z_index = 13
-offset_left = 691.0
-offset_top = 329.0
-offset_right = 735.00006
-offset_bottom = 373.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 759.0
+offset_top = 230.0
+offset_right = 804.0
+offset_bottom = 274.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -667,11 +667,11 @@ script = ExtResource("1_gbtda")
 
 [node name="10" type="Button" parent="."]
 z_index = 13
-offset_left = 891.0
-offset_top = 329.0
-offset_right = 935.00006
-offset_bottom = 373.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 983.0
+offset_top = 230.0
+offset_right = 1028.0
+offset_bottom = 274.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -684,11 +684,11 @@ script = ExtResource("1_gbtda")
 
 [node name="11" type="Button" parent="."]
 z_index = 13
-offset_left = 91.0
-offset_top = 489.0
-offset_right = 135.00003
-offset_bottom = 533.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 69.0
+offset_top = 374.0
+offset_right = 114.0
+offset_bottom = 418.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -701,11 +701,11 @@ script = ExtResource("1_gbtda")
 
 [node name="12" type="Button" parent="."]
 z_index = 13
-offset_left = 291.00006
-offset_top = 489.0
-offset_right = 335.0001
-offset_bottom = 533.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 295.00006
+offset_top = 374.0
+offset_right = 340.00006
+offset_bottom = 418.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -718,11 +718,11 @@ script = ExtResource("1_gbtda")
 
 [node name="13" type="Button" parent="."]
 z_index = 13
-offset_left = 491.00006
-offset_top = 489.0
-offset_right = 535.00006
-offset_bottom = 533.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 519.00006
+offset_top = 374.0
+offset_right = 564.00006
+offset_bottom = 418.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -735,11 +735,11 @@ script = ExtResource("1_gbtda")
 
 [node name="14" type="Button" parent="."]
 z_index = 13
-offset_left = 691.0
-offset_top = 489.0
-offset_right = 735.00006
-offset_bottom = 533.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 759.0
+offset_top = 374.0
+offset_right = 804.0
+offset_bottom = 418.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")
@@ -752,11 +752,96 @@ script = ExtResource("1_gbtda")
 
 [node name="15" type="Button" parent="."]
 z_index = 13
-offset_left = 891.0
-offset_top = 489.0
-offset_right = 935.00006
-offset_bottom = 533.0
-scale = Vector2(3.1113186, 3.1113186)
+offset_left = 983.0
+offset_top = 374.0
+offset_right = 1028.0
+offset_bottom = 418.0
+scale = Vector2(2.6, 2.6)
+theme_override_fonts/font = ExtResource("4_7qp7n")
+theme_override_font_sizes/font_size = 24
+theme_override_icons/icon = ExtResource("5_mtna8")
+text = "1"
+icon = ExtResource("5_mtna8")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("1_gbtda")
+
+[node name="16" type="Button" parent="."]
+z_index = 13
+offset_left = 69.0
+offset_top = 510.0
+offset_right = 114.0
+offset_bottom = 554.0
+scale = Vector2(2.6, 2.6)
+theme_override_fonts/font = ExtResource("4_7qp7n")
+theme_override_font_sizes/font_size = 24
+theme_override_icons/icon = ExtResource("5_mtna8")
+text = "1"
+icon = ExtResource("5_mtna8")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("1_gbtda")
+
+[node name="17" type="Button" parent="."]
+z_index = 13
+offset_left = 295.00006
+offset_top = 510.0
+offset_right = 340.00006
+offset_bottom = 554.0
+scale = Vector2(2.6, 2.6)
+theme_override_fonts/font = ExtResource("4_7qp7n")
+theme_override_font_sizes/font_size = 24
+theme_override_icons/icon = ExtResource("5_mtna8")
+text = "1"
+icon = ExtResource("5_mtna8")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("1_gbtda")
+
+[node name="18" type="Button" parent="."]
+z_index = 13
+offset_left = 519.00006
+offset_top = 510.0
+offset_right = 564.00006
+offset_bottom = 554.0
+scale = Vector2(2.6, 2.6)
+theme_override_fonts/font = ExtResource("4_7qp7n")
+theme_override_font_sizes/font_size = 24
+theme_override_icons/icon = ExtResource("5_mtna8")
+text = "1"
+icon = ExtResource("5_mtna8")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("1_gbtda")
+
+[node name="19" type="Button" parent="."]
+z_index = 13
+offset_left = 759.0
+offset_top = 510.0
+offset_right = 804.0
+offset_bottom = 554.0
+scale = Vector2(2.6, 2.6)
+theme_override_fonts/font = ExtResource("4_7qp7n")
+theme_override_font_sizes/font_size = 24
+theme_override_icons/icon = ExtResource("5_mtna8")
+text = "1"
+icon = ExtResource("5_mtna8")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("1_gbtda")
+
+[node name="20" type="Button" parent="."]
+z_index = 13
+offset_left = 983.0
+offset_top = 510.0
+offset_right = 1028.0
+offset_bottom = 554.0
+scale = Vector2(2.6, 2.6)
 theme_override_fonts/font = ExtResource("4_7qp7n")
 theme_override_font_sizes/font_size = 24
 theme_override_icons/icon = ExtResource("5_mtna8")

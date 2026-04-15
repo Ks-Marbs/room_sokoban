@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxy6gmwxjw00y"
-path="res://.godot/imported/winterblush.png-9683f2ed36ccb0cc30a3fcb38049de21.ctex"
+uid="uid://cxoiay08ed2sm"
+path="res://.godot/imported/player.png-163753890810fa89776ed0f872fd9df1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/winterblush.png"
-dest_files=["res://.godot/imported/winterblush.png-9683f2ed36ccb0cc30a3fcb38049de21.ctex"]
+source_file="res://images/player.png"
+dest_files=["res://.godot/imported/player.png-163753890810fa89776ed0f872fd9df1.ctex"]
 
 [params]
 

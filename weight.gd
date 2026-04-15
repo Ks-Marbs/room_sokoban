@@ -12,9 +12,6 @@ var nextplan_move := Vector2.ONE
 var moving := false
 var xcell := (position.x - (int(position.x) % 36)) / 36
 var ycell := (position.y - (int(position.y) % 36)) / 36
-var one = preload("res://images/box.1.png")
-var two = preload("res://images/box.2.png")
-var three = preload("res://images/box.3.png")
 func may_slide(dir):
 	if Global.get_matrix(xcell, ycell, Global.room_matrix) == 0:
 		if (dir == Vector2.RIGHT and ($RightRay.is_colliding() or Global.get_matrix(xcell+1, ycell, Global.room_matrix)==999))\
@@ -130,20 +127,10 @@ func push():
 						else:
 							can_move = false
 		 
-func wiggle():
-	while yes:
-		$Sprite2d.texture = one
-		await get_tree().create_timer(Global.wiggle_delay).timeout
-		$Sprite2d.texture = two
-		await get_tree().create_timer(Global.wiggle_delay).timeout
-		$Sprite2d.texture = three
-		await get_tree().create_timer(Global.wiggle_delay).timeout
-		$Sprite2d.texture = two
-		await get_tree().create_timer(Global.wiggle_delay).timeout
+
 
 func _ready():
-	wiggle()
-
+	pass
 func _process(delta):
 	del = delta
 	xcell = (position.x - (int(position.x) % 36)) / 36
@@ -163,32 +150,32 @@ func _process(delta):
 		return
 
 	elif Global.get_matrix(xcell,ycell,Global.special_matrix) == 2:
-		await get_tree().create_timer(Global.mini_delay*2).timeout
-		if may_slide(Vector2.UP):
+		await get_tree().create_timer(Global.mini_delay).timeout
+		if may_slide(Vector2.UP) == true:
 			nextplan_move=Vector2.UP
 			move_step(Vector2.UP)
 		else:
 			push()
 
 	elif Global.get_matrix(xcell,ycell,Global.special_matrix) == 3:
-		await get_tree().create_timer(Global.mini_delay*2).timeout
-		if  may_slide(Vector2.DOWN):
+		await get_tree().create_timer(Global.mini_delay).timeout
+		if  may_slide(Vector2.DOWN) == true:
 			nextplan_move=Vector2.DOWN
 			move_step(Vector2.DOWN)
 		else:
 			push()
 
 	elif Global.get_matrix(xcell,ycell,Global.special_matrix) == 4:
-		await get_tree().create_timer(Global.mini_delay*2).timeout
-		if may_slide(Vector2.LEFT):
+		await get_tree().create_timer(Global.mini_delay).timeout
+		if may_slide(Vector2.LEFT) == true:
 			nextplan_move=Vector2.LEFT
 			move_step(Vector2.LEFT)
 		else:
 			push()
 
 	elif Global.get_matrix(xcell,ycell,Global.special_matrix) == 5:
-		await get_tree().create_timer(Global.mini_delay*2).timeout
-		if  may_slide(Vector2.RIGHT):
+		await get_tree().create_timer(Global.mini_delay).timeout
+		if  may_slide(Vector2.RIGHT) == true:
 			nextplan_move=Vector2.RIGHT
 			move_step(Vector2.RIGHT)
 		else:

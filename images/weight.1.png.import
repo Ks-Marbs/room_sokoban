@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bomlkect01o5n"
-path="res://.godot/imported/lavender.png-4456edb526efe12004c7969a8862b6a8.ctex"
+uid="uid://b3fsxr477i1o2"
+path="res://.godot/imported/weight.1.png-df5ddad62e2c1fb9ea154eabd7bd34b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/lavender.png"
-dest_files=["res://.godot/imported/lavender.png-4456edb526efe12004c7969a8862b6a8.ctex"]
+source_file="res://images/weight.1.png"
+dest_files=["res://.godot/imported/weight.1.png-df5ddad62e2c1fb9ea154eabd7bd34b7.ctex"]
 
 [params]
 

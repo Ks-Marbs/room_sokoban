@@ -10,5 +10,5 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	for cell in get_used_cells():
-		Global.room_matrix[cell[0]][cell[1]] = 999
+		Global.special_matrix[cell[0]][cell[1]] = 1
 	pass

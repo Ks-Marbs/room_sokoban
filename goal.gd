@@ -17,7 +17,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if $Ray.is_colliding() and $Ray.get_collider().isbox and $Ray.get_collider().position == self.position:
+	if $Ray.is_colliding() and $Ray.get_collider().isbox and str($Ray.get_collider().name)[0]!="W" and $Ray.get_collider().position == self.position:
 		$Sprite2d.texture = two
 		active = true
 	else:
