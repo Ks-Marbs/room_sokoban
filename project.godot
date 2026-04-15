@@ -27,7 +27,6 @@ window/size/viewport_width=1050
 window/size/viewport_height=612
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
