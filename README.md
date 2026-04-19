@@ -33,3 +33,5 @@ Honestly? This game is just a project I do when I am bored, so updates will come
 ### AI: No thank you, I like to actually think
 
 Feel free to DM me at @ksmarbs in discord for questions, ideas, or just chat
+
+If you cane from flavortown voting, please use the word weight so i onow you saw the read me
